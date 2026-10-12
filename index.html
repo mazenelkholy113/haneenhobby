@@ -1,0 +1,73 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>إلى حبيبتي حنون  ❤️</title><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 50% -10%,#29435d,#07111d 48%,#020508);color:#fff;font-family:Cairo,Arial;min-height:100vh;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.4;background-image:radial-gradient(#fff 1px,transparent 1px),radial-gradient(#fff 1px,transparent 1px);background-size:90px 90px,140px 140px}.app{position:relative;z-index:2;padding:18px 12px 50px}.screen{min-height:calc(100vh - 36px);display:flex;align-items:center;justify-content:center}.panel{width:min(780px,100%);padding:28px 16px;border:1px solid #fff2;background:#081525dd;backdrop-filter:blur(18px);border-radius:30px;text-align:center;box-shadow:0 30px 90px #0008;animation:in .7s ease}@keyframes in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}.title{font-size:clamp(29px,7vw,52px);margin:8px 0 12px}.kicker,.note{color:#aab7c7;font-size:13px}.subtitle{color:#cbd5e1;line-height:2;max-width:620px;margin:0 auto 22px}.primary{border:0;border-radius:999px;padding:13px 25px;background:linear-gradient(135deg,#ff6f91,#ff9bad);color:#fff;font:inherit;font-weight:800;cursor:pointer;box-shadow:0 12px 35px #ff6f9130}.hidden{display:none}.progress{position:fixed;top:0;left:0;right:0;height:3px;background:#fff1;z-index:20}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ff6f91,#ffd166);transition:.6s}.music{position:fixed;top:12px;left:12px;z-index:30;border:1px solid #fff2;background:#ffffff12;color:#fff;border-radius:50%;width:44px;height:44px}.envelope-wrap{height:250px;display:grid;place-items:center}.envelope{width:min(320px,82vw);height:200px;position:relative;cursor:pointer}.env{position:absolute;inset:35px 0 0;background:#f8e6c7;border-radius:10px;overflow:hidden}.env:before,.env:after{content:"";position:absolute;bottom:0;width:0;height:0;border-style:solid}.env:before{right:0;border-width:100px 0 0 160px;border-color:transparent transparent transparent #e9cda7}.env:after{left:0;border-width:100px 160px 0 0;border-color:#efd7b6 transparent transparent transparent}.flap{position:absolute;top:35px;left:0;border-left:160px solid transparent;border-right:160px solid transparent;border-top:105px solid #f6dcb7;z-index:3;transform-origin:top;transition:1s}.envelope.open .flap{transform:rotateX(180deg)}.seal{position:absolute;z-index:5;left:50%;top:85px;transform:translateX(-50%);width:58px;height:58px;border-radius:50%;background:#b43d5e;display:grid;place-items:center;font-size:25px;transition:.5s}.envelope.open .seal{opacity:0}.letter{font-family:Amiri,serif;font-size:clamp(19px,4.8vw,28px);line-height:2;text-align:right;min-height:350px;white-space:pre-wrap}.video{width:min(620px,100%);margin:18px auto;border-radius:22px;overflow:hidden;background:#000;border:1px solid #fff2}.video video{display:block;width:100%;max-height:65vh}.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;max-width:620px;margin:22px auto}.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:18px}.gallery img:first-child{grid-column:1/3;aspect-ratio:16/9}.quote{font-family:Amiri,serif;font-size:clamp(25px,6vw,38px);line-height:1.9;color:#ffe7ed}.flower,.heart{font-size:85px}.choices{height:240px;position:relative;display:flex;justify-content:center;gap:15px}.choices button{min-width:110px;height:54px;border:0;border-radius:999px;font:inherit;font-weight:800}.yes{background:#ff6f91;color:white;position:relative}.no{background:white;color:#17202a}.eat{font-size:130px;cursor:pointer;transition:.4s}
+.reaction-frame{width:min(440px,100%);aspect-ratio:4/3;margin:15px auto;border:2px solid #ffffff33;border-radius:24px;overflow:hidden;background:#080c14;box-shadow:0 18px 45px #0007}.reaction-frame video{display:block;width:100%;height:100%;object-fit:contain}.reaction-note{font-size:13px;color:#cbd5e1;margin:8px auto}
+.juice-stage{width:min(260px,70vw);height:260px;margin:15px auto;position:relative}
+.glass{position:absolute;left:50%;bottom:10px;transform:translateX(-50%);width:125px;height:190px;border:5px solid #ffffff99;border-top-width:7px;border-radius:14px 14px 30px 30px;overflow:hidden;background:#ffffff12;box-shadow:0 12px 30px #0006}
+.juice-fill{position:absolute;left:0;bottom:0;width:100%;height:100%;background:linear-gradient(180deg,#ffd95f,#f38a24);transition:height .55s ease}
+.glass-rim{position:absolute;left:50%;top:45px;transform:translateX(-50%);width:145px;height:27px;border-radius:50%;background:#ffd967;border:5px solid #fff9;z-index:2}
+.straw{position:absolute;z-index:3;left:calc(50% + 30px);top:0;width:10px;height:90px;background:#ff7897;border-radius:8px;transform:rotate(15deg)}
+@media(max-width:500px){.food-grid{gap:7px}.food-square{height:70px;font-size:32px}}
+</style></head><body><div class="progress"><i id="bar"></i></div><button class="music" id="mb">🔇</button><audio id="music" loop><source src="music.mp3" type="audio/mpeg"></audio><main class="app"><div id="root"></div></main><script>
+const r=document.getElementById("root"),bar=document.getElementById("bar"),music=document.getElementById("music"),mb=document.getElementById("mb");let s=0,timer;function render(x){r.innerHTML='<section class="screen"><div class="panel">'+x+'</div></section>';bar.style.width=(s/7*100)+'%';scrollTo(0,0)}function go(){s++;({1:letter,2:choc,3:mango,4:gallery,5:motivation,6:question,7:final}[s]||final)()}mb.onclick=()=>{if(music.paused){music.play();mb.textContent="🔊"}else{music.pause();mb.textContent="🔇"}};render('<div class="kicker"> احلى هدية للمعلم اللي زعلان مني </div><h1 class="title">😘الى مراتي المزة حنونة</h1><p class="subtitle">افتحي الظرف… .</p><div class="envelope-wrap"><div class="envelope" id="env"><div class="env"></div><div class="flap"></div><div class="seal">❤️</div></div></div><div class="note">اضغطي </div>');env.onclick=()=>{music.play().catch(()=>{});env.classList.add("open");setTimeout(go,1100)};
+function letter(){let text=` حنونة\n\nأنا عارف ان انا مقصر في حقك وعارف اني مبتكلمش معاكي كتير والله غصب عني  \n\n بص والله دا مش اهمال مني او اني بطلت احبك\n او اني مبقتش شايفة البنت اللي بتمناها انتي روحي يابت \n\n هغير الحتة دي فيا وهنتكلم كتير اوي \n\n بس حتى لو احنا مبنتكلمش كتير انتي في بالي وفي عقلي يا نور عيني \n\n انا بحبك ومتفكريش كتييير وهتعرفي اني اكتر حد بيحبك  ❤️`;render('<div class="kicker">رسالة صغيرة ليكي</div><div class="letter"><span id="tx"></span></div><button class="primary hidden" id="next">يله يا كوتي كملي</button>');let i=0;timer=setInterval(()=>{tx.textContent=text.slice(0,i++);if(i>text.length){clearInterval(timer);next.classList.remove("hidden")}},45);next.onclick=go}
+let biteTimeout;
+function playBite(video){
+ clearTimeout(biteTimeout);
+ video.pause();
+ try{video.currentTime=0}catch(e){}
+ video.muted=true;
+ video.play().catch(()=>{});
+ biteTimeout=setTimeout(()=>{video.pause()},850);
+}
+function choc(){
+render(`<div class="kicker">🍫 هديتك الأولى</div>
+<h2 class="title">كلي يله الشيكولاتة ومتزعليش بقا</h2>
+<p class="subtitle">كلي بالهنا على قلبك يا روحي.</p>
+<div class="reaction-frame"><video id="chocoVideo" src="a.mp4" poster="nada.jpg" muted playsinline webkit-playsinline preload="auto"></video></div><p class="reaction-note"> اجمل واحدة في الدنيا اللي هتتخن </p><div class="animation-hint"> كلي شيكولاتة عشان تتخني</div><div class="food-grid" id="chocoGrid">
+<div class="food-square" data-i="1">🍫</div><div class="food-square" data-i="2">🍫</div>
+<div class="food-square" data-i="3">🍫</div><div class="food-square" data-i="4">🍫</div>
+</div>
+<div class="result" id="chocoCount">4 قطمات باقيين</div>
+<p class="note">   عشان تبقي تاكلي شيكولاتة في الكلية</p>
+<button class="primary hidden" id="chocoNext">خلصتيها كلها؟ كملي </button>`);
+let left=4, v=document.getElementById("chocoVideo");
+document.querySelectorAll("#chocoGrid .food-square").forEach(card=>{
+ card.onclick=()=>{
+   if(card.classList.contains("used"))return;
+   card.classList.add("used"); left--;
+   v.pause();playBite(v);
+   document.getElementById("chocoCount").textContent=left?`${left} قطمات باقيين 🍫`:"خلصتي الشوكولاتة كلها 😂❤️";
+   if(left===0)document.getElementById("chocoNext").classList.remove("hidden");
+ };
+});
+document.getElementById("chocoNext").onclick=go;
+}
+function mango(){
+render(`<div class="kicker">🥭 بعد الشوكولاتة</div>
+<h2 class="title">عصير المانجا</h2>
+<p class="subtitle">اشربي يختي منجا يله عقبال مترضعيني يارب</p>
+<div class="reaction-frame"><video id="sipVideo" src="b.mp4" poster="nada.jpg" muted playsinline webkit-playsinline preload="auto"></video></div><p class="reaction-note">  يابختي بيكي </p><div class="juice-stage"><div class="straw"></div><div class="glass"><div class="juice-fill" id="juiceFill"></div></div><div class="glass-rim"></div></div>
+<div class="food-grid" id="sipGrid">
+<div class="food-square" data-i="1">🥭</div><div class="food-square" data-i="2">🥭</div>
+<div class="food-square" data-i="3">🥭</div><div class="food-square" data-i="4">🥭</div>
+</div>
+<div class="result" id="sipCount">4  </div>
+<button class="primary hidden" id="sipNext">خلص العصير ❤️</button>`);
+let left=4,v=document.getElementById("sipVideo");
+document.querySelectorAll("#sipGrid .food-square").forEach(card=>{
+ card.onclick=()=>{
+   if(card.classList.contains("used"))return;
+   card.classList.add("used");left--;
+   v.pause();playBite(v);
+   document.getElementById("juiceFill").style.height=(left*25)+"%";
+   document.getElementById("sipCount").textContent=left?`${left}  بوق فاضلين 🥭`:"العصير خلص! بالهنا على قلبك ❤️";
+   if(left===0)document.getElementById("sipNext").classList.remove("hidden");
+ };
+});
+document.getElementById("sipNext").onclick=go;
+}
+function gallery(){render('<div class="kicker">البومنا الصغير 📸</div><h2 class="title"> صورنا الجميلة  </h2><div class="gallery"><img src="11.jpeg"><img src="22.jpeg"><img src="33.jpeg"><img src="44.jpeg"></div><button class="primary" onclick="go()">نكمل ❤️</button>')}
+function motivation(){render('<div class="flower">🌷</div><div class="quote">"متزعليش مني واستحمليني يابت وحقك عليا<br>لسة حياتنا جاية ولسة ياما هنشوف وياما هنكون مع بعض وفي حضن بعض   مش من مطب صغير تنشفي دماغك يابت"</div><p class="subtitle"> استحمليني وانا جنبك على طول والله وفي بالي ديما انا بحبك يابت  بحبك يا حنوووونة بعشقككككك❤️</p><button class="primary" onclick="go()">اللي بعدووووو</button>')}
+function question(){render('<div class="kicker">آخر سؤال 😂❤️</div><h2 class="title">حنوووووووون </h2><p class="subtitle" style="font-size:21px">انتي بتحبيني يا حنة ؟؟<br>بتحبيني بجد ولا نص نص؟؟❤️</p><div class="choices"><button class="yes" id="yes">آه ❤️</button><button class="no" id="no">لأ 😂</button></div><div class="note" id="qm">اختاري براحتك 😌</div>');let tries=0;yes.onclick=()=>{tries++;yes.style.position="fixed";yes.style.left=(7+Math.random()*80)+"vw";yes.style.top=(12+Math.random()*72)+"vh";qm.textContent=tries<6?"آه؟ استني… الزرار بيهرب 😂❤️":"خلاص كفاية جري 😂";if(tries>=6){yes.style.position="relative";yes.style.left="0";yes.style.top="0";yes.onclick=final;qm.textContent="خلاص… المرة دي هسيبهالك 😂❤️"}};no.onclick=()=>{qm.textContent="ماشي يا حنة 😂❤️";setTimeout(final,1600)}}
+function final(){render('<div class="heart">❤️</div><h1 class="title">ماشي يا حنون 😂</h1><div class="quote">بس أنا عارف إنك بتحبيني اوي ومن قلبك<br> طب منا عارف بس بحب ادايقك😂</div><p class="subtitle">خلي بالك من نفسك يا حبي ومتخليش حجات بسيطة تزعلنا من بعض .<br>.<br>ايامنا الحلوة لسة في بدايتها لسة في جواز ودلع وشيشة وقلة اب وابننا حمزة لسة في كتير متنشفيش دماغك من دلوقتي 😂😂❤️</p><div class="kicker">— من حبيبك مازن ❤️</div>')}
+</script></body></html>
